@@ -20,19 +20,19 @@ def full_name(short_name):
 
 
 def check_victory(player, bot):
-    if player_choice == bot_choice:
+    if player == bot:
         return 'd' #draw
-    elif player_choice == 'к' and bot_choice == 'н':
+    elif player == 'к' and bot == 'н':
         return 'p' #player
-    elif player_choice == 'к' and bot_choice == 'п':
+    elif player == 'к' and bot == 'п':
         return 'b' #bot
-    elif player_choice == 'н' and bot_choice == 'п':
+    elif player == 'н' and bot == 'п':
         return 'p'
-    elif player_choice == 'н' and bot_choice == 'к':
+    elif player == 'н' and bot == 'к':
         return 'b'
-    elif player_choice == 'п' and bot_choice == 'к':
+    elif player == 'п' and bot == 'к':
         return 'p'
-    elif player_choice == 'п' and bot_choice == 'н':
+    elif player == 'п' and bot == 'н':
         return 'b'
     else:
         return None
